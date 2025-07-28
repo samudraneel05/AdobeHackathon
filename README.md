@@ -1,10 +1,6 @@
-# Adobe India Hackathon 2025
+# Adobe India Hackathon 2025 "Connecting the Dots" Challenge
 
-## Welcome to the "Connecting the Dots" Challenge - COMPLETE SOLUTION
-
-### Rethink Reading. Rediscover Knowledge
-
-This repository contains a **complete, production-ready implementation** of both Challenge 1A and Challenge 1B for the Adobe India Hackathon 2025 "Connecting the Dots" competition.
+This repository contains a implementations of both Challenge 1A and Challenge 1B for the Adobe India Hackathon 2025 "Connecting the Dots" competition.
 
 ## 🎯 Challenge Solutions Overview
 
@@ -253,5 +249,3 @@ This complete implementation delivers:
 **The solution is ready for immediate evaluation and deployment! 🚀**
 
 ---
-
-**Note**: This implementation represents a complete, production-ready solution that exceeds all challenge requirements while maintaining the performance, reliability, and scalability needed for real-world deployment.
