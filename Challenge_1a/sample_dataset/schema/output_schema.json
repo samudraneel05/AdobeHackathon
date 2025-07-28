@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The main title of the document"
+    },
+    "outline": {
+      "type": "array",
+      "description": "Hierarchical outline of the document with headings",
+      "items": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string",
+            "enum": ["H1", "H2", "H3"],
+            "description": "Heading level (H1, H2, or H3)"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The heading text content"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Page number where the heading appears"
+          }
+        },
+        "required": ["level", "text", "page"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["title", "outline"],
+  "additionalProperties": false
+}
