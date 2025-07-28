@@ -14,7 +14,7 @@ import os
 
 # Add current directory to path to import process_pdfs
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from process_pdfs import PDFOutlineExtractor
+from Challenge_1a.process_pdfs import PDFOutlineExtractor
 
 import jsonschema
 

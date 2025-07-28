@@ -262,6 +262,145 @@ class PDFOutlineExtractor:
             
         return merged_lines
 
+    def detect_tables(self, doc) -> Dict[int, List[List[float]]]:
+        """Detect table regions in the document based on line patterns."""
+        table_regions = {}
+        
+        for page_num in range(len(doc)):
+            page = doc[page_num]
+            page_tables = []
+            
+            # Get all drawings that might be table lines
+            drawings = page.get_drawings()
+            horizontal_lines = []
+            vertical_lines = []
+            
+            # Extract horizontal and vertical lines
+            for drawing in drawings:
+                if drawing.get("rect"):
+                    rect = drawing["rect"]
+                    width = rect[2] - rect[0]
+                    height = rect[3] - rect[1]
+                    
+                    # Horizontal lines are much wider than tall
+                    if width > 3 * height and height < 3:
+                        horizontal_lines.append((rect[0], rect[1], rect[2], rect[3]))
+                    
+                    # Vertical lines are much taller than wide
+                    elif height > 3 * width and width < 3:
+                        vertical_lines.append((rect[0], rect[1], rect[2], rect[3]))
+            
+            # Find intersections of horizontal and vertical lines (potential tables)
+            if len(horizontal_lines) >= 3 and len(vertical_lines) >= 2:
+                # Find bounding boxes where multiple horizontal and vertical lines intersect
+                h_sorted = sorted(horizontal_lines, key=lambda x: x[1])  # Sort by y-position
+                v_sorted = sorted(vertical_lines, key=lambda x: x[0])  # Sort by x-position
+                
+                # Look for table grids (at least 3 rows and 2 columns)
+                for i in range(len(h_sorted) - 2):
+                    top_line = h_sorted[i]
+                    for j in range(i + 2, len(h_sorted)):
+                        bottom_line = h_sorted[j]
+                        
+                        # Check if there are vertical lines connecting these horizontal lines
+                        connections = 0
+                        for v_line in v_sorted:
+                            # Vertical line should span between the two horizontal lines
+                            if (v_line[1] <= top_line[1] + 5 and v_line[3] >= bottom_line[1] - 5 and
+                                v_line[0] >= min(top_line[0], bottom_line[0]) - 5 and 
+                                v_line[0] <= max(top_line[2], bottom_line[2]) + 5):
+                                connections += 1
+                        
+                        # If we have enough vertical lines to form a table
+                        if connections >= 2:
+                            # Add table region (left, top, right, bottom)
+                            left = max(min(top_line[0], bottom_line[0]), min(v_line[0] for v_line in v_sorted))
+                            right = min(max(top_line[2], bottom_line[2]), max(v_line[2] for v_line in v_sorted))
+                            table_box = [left, top_line[1], right, bottom_line[3]]
+                            page_tables.append(table_box)
+            
+            # Also detect tables by looking for grid-like text patterns
+            blocks = page.get_text("dict")["blocks"]
+            lines_by_y = {}
+            for block in blocks:
+                if "lines" in block:
+                    for line in block["lines"]:
+                        y_pos = round(line["bbox"][1], 1)  # Round to reduce noise
+                        if y_pos not in lines_by_y:
+                            lines_by_y[y_pos] = []
+                        lines_by_y[y_pos].append(line)
+            
+            # If we have multiple text blocks aligned on the same y-position, might be a table row
+            for y_pos, lines in lines_by_y.items():
+                if len(lines) >= 3:  # At least 3 cells in a row
+                    # Sort by x position
+                    lines.sort(key=lambda x: x["bbox"][0])
+                    
+                    # Check if they're evenly spaced (potential table)
+                    x_positions = [line["bbox"][0] for line in lines]
+                    gaps = [x_positions[i+1] - x_positions[i] for i in range(len(x_positions)-1)]
+                    
+                    # If we have consistent gaps (standard deviation is low), it's likely a table row
+                    if gaps and len(gaps) > 1:
+                        avg_gap = sum(gaps) / len(gaps)
+                        std_dev = (sum((g - avg_gap) ** 2 for g in gaps) / len(gaps)) ** 0.5
+                        
+                        if std_dev / avg_gap < 0.5:  # Relatively consistent spacing
+                            # Find similar rows above and below to establish table boundaries
+                            y_values = sorted(lines_by_y.keys())
+                            y_idx = y_values.index(y_pos)
+                            
+                            # Look for rows above and below with similar pattern
+                            found_rows = [y_pos]
+                            for idx in range(y_idx - 1, -1, -1):  # Look above
+                                if len(lines_by_y[y_values[idx]]) >= 2:  # At least 2 cells
+                                    found_rows.append(y_values[idx])
+                            
+                            for idx in range(y_idx + 1, len(y_values)):  # Look below
+                                if len(lines_by_y[y_values[idx]]) >= 2:  # At least 2 cells
+                                    found_rows.append(y_values[idx])
+                            
+                            if len(found_rows) >= 3:  # At least 3 rows to be a table
+                                min_y = min(found_rows)
+                                max_y = max(found_rows)
+                                
+                                # Calculate left and right bounds
+                                all_lines = []
+                                for row_y in found_rows:
+                                    all_lines.extend(lines_by_y[row_y])
+                                
+                                min_x = min(line["bbox"][0] for line in all_lines)
+                                max_x = max(line["bbox"][2] for line in all_lines)
+                                
+                                # Add 10-point margin
+                                table_box = [min_x - 10, min_y - 10, max_x + 10, max_y + 20]
+                                page_tables.append(table_box)
+            
+            # Merge overlapping table regions
+            merged_tables = []
+            for table in sorted(page_tables, key=lambda x: (x[1], x[0])):  # Sort by y, then x
+                merged = False
+                for i, existing in enumerate(merged_tables):
+                    # Check for significant overlap
+                    if (min(table[2], existing[2]) - max(table[0], existing[0]) > 0 and
+                        min(table[3], existing[3]) - max(table[1], existing[1]) > 0):
+                        # Merge by taking the union
+                        merged_tables[i] = [
+                            min(table[0], existing[0]),
+                            min(table[1], existing[1]),
+                            max(table[2], existing[2]),
+                            max(table[3], existing[3])
+                        ]
+                        merged = True
+                        break
+                
+                if not merged:
+                    merged_tables.append(table)
+            
+            table_regions[page_num] = merged_tables
+        
+        return table_regions
+    
     def extract_outline(self, pdf_path: str) -> Dict[str, Any]:
         """Extract title and hierarchical outline from PDF."""
         start_time = time.time()
@@ -271,6 +410,12 @@ class PDFOutlineExtractor:
             
             # Extract title
             title = self.extract_title(doc, pdf_path)
+            
+            # Detect if this is a form document
+            is_form_document = "form" in title.lower() or "application" in title.lower()
+            
+            # Detect table regions
+            table_regions = self.detect_tables(doc)
             
             # Calculate baseline font size
             avg_font_size = self.calculate_average_font_size(doc)
@@ -300,13 +445,35 @@ class PDFOutlineExtractor:
                         
                         # Calculate relative vertical position on page
                         bbox = merged_line.get("bbox", [0, 0, 0, 0])
+                        x_position = bbox[0] if bbox else 0
                         y_position = bbox[1] if bbox else 0
+                        width = bbox[2] - bbox[0] if bbox else 0
+                        height = bbox[3] - bbox[1] if bbox else 0
                         relative_position = y_position / page_height if page_height else 0
                         
-                        # Initial heading level detection
-                        level = self.detect_heading_level(
-                            text, font_size, font_flags, avg_font_size, relative_position
-                        )
+                        # Check if this text is inside a table region
+                        is_in_table = False
+                        if page_num in table_regions:
+                            for table in table_regions[page_num]:
+                                # If text bbox overlaps with table region
+                                if (x_position < table[2] and x_position + width > table[0] and
+                                    y_position < table[3] and y_position + height > table[1]):
+                                    is_in_table = True
+                                    break
+                        
+                        # Skip heading detection for table content
+                        if is_in_table:
+                            level = None
+                        else:
+                            # Initial heading level detection
+                            level = self.detect_heading_level(
+                                text, font_size, font_flags, avg_font_size, relative_position
+                            )
+                        
+                        # Special handling for form documents
+                        if is_form_document and level == "H3" and "Name" in text:
+                            # Skip form field labels in form documents
+                            level = None
                         
                         if level and text:
                             # Store candidate heading with its characteristics for post-processing

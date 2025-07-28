@@ -6,7 +6,7 @@ import sys
 import os
 import json
 sys.path.append('.')
-from process_pdfs import PDFOutlineExtractor
+from Challenge_1a.process_pdfs import PDFOutlineExtractor
 
 def test_your_pdf(pdf_path):
     """Test with your own PDF file."""
