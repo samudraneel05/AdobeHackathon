@@ -10,9 +10,9 @@ from transformers import T5ForConditionalGeneration, T5Tokenizer
 
 # --- Import your refactored controller functions ---
 # Make sure these files (intent_analyzer.py, retriever.py) are in the same directory as main.py
-from intent_analyzer import create_intent_model_from_text
+from Challenge_1b.intent_analyzer import create_intent_model_from_text
 #from retriever import run_retrieval
-from retriever import run_retrieval
+from Challenge_1b.retriever import run_retrieval
 
 
 # ==============================================================================
