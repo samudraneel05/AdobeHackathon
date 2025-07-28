@@ -1,0 +1,19 @@
+# .dockerignore
+
+# Ignore Python's virtual environment
+env/
+.venv/
+
+# Ignore Python's cache files
+__pycache__/
+*.pyc
+
+# Ignore local model downloads (they will be downloaded INSIDE the Docker build)
+models/
+
+# Ignore local parsed files and outputs
+**/parsed_output/
+**/*_generated_output.json
+
+# Ignore Git folder
+.git/

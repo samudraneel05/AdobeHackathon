@@ -1,0 +1,15 @@
+# requirements.txt
+
+# Core ML Libraries
+torch
+transformers
+sentence-transformers
+rank_bm25
+gliner-spacy
+
+# PDF Processing
+PyMuPDF
+pdfplumber
+
+# Utility
+jsonschema
