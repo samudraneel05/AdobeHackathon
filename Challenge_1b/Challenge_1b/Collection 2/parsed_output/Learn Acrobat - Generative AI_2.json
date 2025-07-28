@@ -1,0 +1,106 @@
+{
+  "file_name": "Learn Acrobat - Generative AI_2.pdf",
+  "title": "",
+  "content_tree": [
+    {
+      "heading": "Note:",
+      "content": "The option  Enable generative AI features in Acrobat  is displayed only if you  previously opted in for the generative AI features.",
+      "page": 1
+    },
+    {
+      "heading": "Persistent chat history",
+      "content": "You can access your conversation threads with Acrobat's AI Assistant across sessions. You can  access the chat history whether your files are stored locally or in the cloud. The chat history  includes a timeline to trace how your questions and answers evolved. You can also copy and  save the entire chat history at a desired location. The copied chat history does not show the  timeline of questions and generated answers.\nAccess a document where you previously used the AI Assistant to generate responses to your  queries. The document opens as before, with the full chat history and any associated follow- up questions.\nChat history",
+      "page": 2
+    },
+    {
+      "heading": "Clear chat history",
+      "content": "You can clear the chat history and ensure that the AI Assistant treats the document as new so  you can ask fresh questions.     To clear chat history:\n1.   Open the document for which you wish to clear the chat history. Select   in the upper\nright.\n2.   Select  Clear chat history . A confirmation dialog box will appear, asking you to confirm\nyour selection. Select  Clear history . If you don't want to clear your chat history,  select  Cancel .\nClear chat history from the AI assistant\nYour chat history is cleared. You see a message saying -  Your chat history was cleared. To  continue asking questions, start a new chat . You can select  Start new chat  in the lower right  to ask questions. The message displays in the AI Assistant as long as the document remains  open without reprocessing. Close and reopen the document to reset the Assistant and  remove the message.",
+      "page": 3
+    },
+    {
+      "heading": "Copy chat history",
+      "content": "You can copy all chat history and save it to your desired location. The copied chat history will  not include the date separator.\n1.   Open the document from which you wish to copy the chat history. Select     in the upper\nright.\n2.   Select  Copy full chat . The chat gets copied, and you can paste it at your desired\nlocation.\nCopy chat history from the AI assistant",
+      "page": 4
+    },
+    {
+      "heading": "Read-aloud generated responses",
+      "content": "Quickly review the generated responses using the read-aloud feature in Acrobat AI Assistant.  The read-aloud feature helps you play the AI Assistant generated response or a part of it in  your chat. You can select any sentence and play it. You can also choose to change the voice of  the feature. To access the read-aloud feature:\n1.   Open the document you want to review. Select  AI Assistant  from the lower right and\nenter your query. A response is generated.\n2.   Select the speaker icon in the upper right to turn on the read-aloud feature.\n3.   Select the play button at the bottom of your screen. It starts to read aloud the last\nresponse visible on the screen. You can pause or resume the read-aloud feature using  the same button.\nThe words spoken get highlighted simultaneously to ensure you always have the context and  no confusion.\nYou can also select any sentence, and the read-aloud feature will play from the selected  sentence.",
+      "page": 6
+    },
+    {
+      "heading": "Change the playback speed",
+      "content": "You can change the speed at which the feature reads the text.\n1.   Select the speed button on the lower left, then select the speed at which you want to\nplay the generated response.\nCustom voice for read-aloud feature\nYou can select a custom voice to read the text. Select the custom voice icon in the lower right  and the voice you want for the read-aloud feature.",
+      "page": 8
+    },
+    {
+      "heading": "Multiple document support in AI Assistant",
+      "content": "GenAl Assistant allows users to process up to 10 documents simultaneously, including non- PDF formats (.doc, .docx, .rtf, .txt, .ppt, .pptx), each up to 600 pages and 100MB. Users can  switch between documents, with responses consolidated from various sources and proper  attributions. Persistent history support is also included to provide continuous access to  previous interactions.\n1.   Open Acrobat and then open a document. Select AI Assistant. Select the add\nbutton   from the lower left. It opens the Select files to use with AI Assistant. Select the  files you want to add and select Next from the upper right.\nAlternatively, you can also use AI Assistant for multiple docs in the following ways:\n\u2022   Open Acrobat, and then select multiple files from the home view. Select the  ellipsis from the top right and then select  Ask AI Assistant .  \u2022   Select multiple files from third-party applications, and select  Share  >  Adobe  Acrobat  >  Ask AI Assistant .\n\u2022   Open Acrobat, then select  Try it now  from the  Try AI Assistant  onboarding  card in the home view. Then select the files you want to add and select Next  from the upper right.   2.   When the file is added, chat displays the number of files added.   3.   You can enter your question or choose from suggested questions. You get generated  responses. If you want to view the references of the generated responses, select the  reference numbers next to the responses. AI Assistant opens the source file first and  then shows you the references.  4.   When you use the assistant with multiple files, a collection of those files is created and  shown in the  Recents  tab. You can resume the assistant chat with those files. You can  rename the collection of those files from the contextual bar (select the ellipsis next to  the file name to open the context bar) in the home view.",
+      "page": 10
+    },
+    {
+      "heading": "Note:",
+      "content": "\u2022   When you open the collection from the  Recents  tab, the chat resumes from where you  left off.  \u2022   When you open any file that was part of any collection and launch AI Assistant, the AI  Assistant allows you to resume the previous chat that involved the document.",
+      "page": 11
+    },
+    {
+      "heading": "Remove files from a collection",
+      "content": "1.   Select Files in the collection icon in the upper right.\n2.   Select the remove icon next to the file name. In the dialog box that appears, confirm\nthe removal of the selected file. The file is removed from the collection.\nAs a Teams user, learn how to request access to AI Assistant for Acrobat from within the app.",
+      "page": 12
+    },
+    {
+      "heading": "Request access in Acrobat",
+      "content": "If you're a Teams user, your administrator can turn on the option to request access to the AI  Assistant for Acrobat in the app. After you submit the access request, you must wait for further  review and approval by your admin before you're granted access. You can request access to  the AI Assistant for Acrobat from the Acrobat desktop app, Acrobat on the web, Acrobat  browser extension, and Acrobat for Microsoft Teams.\n1.   Launch Acrobat, and select  Get access  from the AI Assistant for Acrobat.\nSelect Get access\n2.   In the  Request access  dialog, specify a business reason for requesting access to the AI\nAssistant for Acrobat.\n3.   Select  Send request . Your access request is submitted to the admin for review and\napproval. After the admin approves your request, you'll receive an email confirming  that the AI Assistant for Acrobat is available.\nNote:  To check the status of your request, select  Refresh  on the AI Assistant.    For more information on requesting access to Adobe products and services, see Request  access to an Adobe product and Manage product requests.",
+      "page": 12
+    },
+    {
+      "heading": "Request access from the Admin Console (Teams hybrid admins)",
+      "content": "If you're an admin, you can purchase an AI Assistant for Acrobat add-on subscription through  the Admin Console if your team members have consumed the free requests or require more  licenses.\n1.   Launch Acrobat and sign in as an administrator.\n2.   From the AI Assistant for Acrobat, select  Subscribe now .\n3.   In the dialog that appears, select  Continue . If you have already purchased the AI\nAssistant for Acrobat add-on subscription, select the  Assign a license  link to assign  licenses to users from the Admin Console.\n4.   You're redirected to the  Add license  page to purchase an AI Assistant for Acrobat add-\non subscription. Specify your payment details, and then select  Place secure order .\nPurchase licenses\n5.   Once your purchase is complete, you can assign licenses to users from the  Add users\nto this product  page.  Your team members receive an email notification when the product is provisioned to  their account. They can select the link to launch Acrobat to access AI Assistant for  Acrobat.",
+      "page": 14
+    },
+    {
+      "heading": "Note:",
+      "content": "To check your subscription is activated, select  Refresh  on the AI Assistant.",
+      "page": 15
+    },
+    {
+      "heading": "Review the status of your request",
+      "content": "When you submit a request, it can be approved or denied, or the review can be pending.\n\u2022   Approved requests:  If your request is automatically or manually approved, the product  license is provisioned to your Adobe account. You'll receive an email notifying you when the  license is available.\n\u2022   Denied requests:  If you submit your request for review and an administrator denies your  request, you'll receive an email notifying you why the request was denied. Once denied, you  can re-request the identical product from your organization using a more descriptive business  reason.\n\u2022   Pending requests:  After you submit a request for administrator review, it's awaiting approval  and can remain in that state for up to 60 days. You receive an email notification at 30 days that  the request is pending for review and again at 60 days when the request has expired. You  cannot re-request a pending product.",
+      "page": 16
+    },
+    {
+      "heading": "I have multiple profiles associated with my Adobe account. How do I select which profile to  send a request from?",
+      "content": "If you have multiple profiles associated with your organization-provided Adobe account, you  must first choose which profile to sign in with. Then, request a product from that profile. The  request will be routed to the organization and administrators associated with that profile.",
+      "page": 16
+    },
+    {
+      "heading": "What if I can\u2019t find the option to request access to AI Assistant for Acrobat?",
+      "content": "If you can't find the option to request access to a product, your administrator may not have  enabled the option for your organization. Contact your administrator to learn more.",
+      "page": 16
+    },
+    {
+      "heading": "What notifications do I receive if a request is approved, declined, or pending?",
+      "content": "You receive email notifications when an administrator responds to your request, when the  request has been pending for 30 days, or when it expires after 60 days. Learn more about  the statuses and notifications.",
+      "page": 16
+    },
+    {
+      "heading": "What happens if my request is declined?",
+      "content": "If your request is denied, you'll receive an email explaining why. Once declined, you can re- request AI Assistant for Acrobat from your organization.\nAdminister AI Assistant for enterprises\nAdobe's AI Assistant for enterprises extends generative AI features to Acrobat on the web,  mobile, and desktop platforms. It provides centralized license management and enterprise- level technical support for adequate user support at scale.",
+      "page": 17
+    },
+    {
+      "heading": "Prerequisites",
+      "content": "Before deploying, ensure the following requirements are met:\n\u2022   Update Acrobat . Ensure Acrobat is up-to-date by following instructions in the Release  Notes for Acrobat. Also, refer to the basic configuration settings.\n\u2022   Enable new Acrobat .\n\u2022   Administrators : To turn on the new Acrobat for users, use the registry key  mentioned in the Acrobat Enterprise Toolkit (ETK).\n\u2022   Users : Choose the hamburger menu (Windows) or View (macOS), then  select  Enable new Acrobat . For details, see how to enable the new experience.\n\u2022   PDF services for user profiles .\n\u2022   Acrobat desktop and mobile : To use AI Assistant for Acrobat, you need not  turn on PDF services in the Admin Console.\n\u2022   Acrobat online : Turn on PDF services for the product profile assigned to users.  See how to turn on or turn off PDF services.",
+      "page": 17
+    },
+    {
+      "heading": "Note:",
+      "content": "Acrobat Classic does not support AI Assistant.",
+      "page": 18
+    },
+    {
+      "heading": "License deployment",
+      "content": "You can manage the deployment of Acrobat AI Assistant through the Adobe Admin Console.  As an admin, you must add users to the Admin Console using one of the methods described  in Adobe Admin Console users. You can choose to either select the users to assign or create  product profiles and assign users to the profiles. For more information, see Packaging apps via  the Admin Console. Once you assign AI Assistant for Acrobat, the users must restart Acrobat  to see AI Assistant.",
+      "page": 18
+    }
+  ]
+}

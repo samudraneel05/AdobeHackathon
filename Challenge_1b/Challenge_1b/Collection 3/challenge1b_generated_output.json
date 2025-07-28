@@ -1,0 +1,77 @@
+{
+    "metadata": {
+        "input_documents": [
+            "Breakfast Ideas.pdf",
+            "Dinner Ideas - Mains_1.pdf",
+            "Dinner Ideas - Mains_2.pdf",
+            "Dinner Ideas - Mains_3.pdf",
+            "Dinner Ideas - Sides_1.pdf",
+            "Dinner Ideas - Sides_2.pdf",
+            "Dinner Ideas - Sides_3.pdf",
+            "Dinner Ideas - Sides_4.pdf",
+            "Lunch Ideas.pdf"
+        ],
+        "persona": "Food Contractor",
+        "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+        "processing_timestamp": "2025-07-28T22:06:02.406433"
+    },
+    "extracted_sections": [
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "page_number": 6,
+            "section_title": "Kachumbari",
+            "importance_rank": 1
+        },
+        {
+            "document": "Dinner Ideas - Mains_1.pdf",
+            "page_number": 9,
+            "section_title": "Beef Stroganoff  Ingredients:",
+            "importance_rank": 2
+        },
+        {
+            "document": "Dinner Ideas - Mains_2.pdf",
+            "page_number": 15,
+            "section_title": "Ingredients:",
+            "importance_rank": 3
+        },
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "page_number": 15,
+            "section_title": "Msemen",
+            "importance_rank": 4
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "page_number": 15,
+            "section_title": "Acaraj\u00e9",
+            "importance_rank": 5
+        }
+    ],
+    "subsection_analysis": [
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "page_number": 6,
+            "refined_text": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering."
+        },
+        {
+            "document": "Dinner Ideas - Mains_1.pdf",
+            "page_number": 9,
+            "refined_text": "skillet over medium heat.  Cook chicken until golden brown on both sides.  Cook ground beef over medium heat until browned.  Add diced onion, minced garlic, grated carrot, and diced celery, saut\u00e9 until vegetables are tender.  Stir in tomatoes, tomato paste, red wine (optional), oregano, basil, salt, and pepper.  Bake for 20-25 minutes until cheese is melted and bubbly.  Serve Bolognese sauce over spaghetti, garnished with grated Parmesan cheese. Teriyaki Chicken Ingredients"
+        },
+        {
+            "document": "Dinner Ideas - Mains_2.pdf",
+            "page_number": 15,
+            "refined_text": "Prepare a vegetarian buffet-style dinner menu."
+        },
+        {
+            "document": "Dinner Ideas - Sides_3.pdf",
+            "page_number": 15,
+            "refined_text": "\"Document: Dinner Ideas - Sides_3.pdf"
+        },
+        {
+            "document": "Dinner Ideas - Sides_1.pdf",
+            "page_number": 15,
+            "refined_text": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering."
+        }
+    ]
+}

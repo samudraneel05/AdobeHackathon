@@ -1,0 +1,166 @@
+{
+  "file_name": "Learn Acrobat - Share_2.pdf",
+  "title": "",
+  "content_tree": [
+    {
+      "heading": "Add comments while viewing a PDF  document",
+      "content": "You can now use quick actions in a floating toolbar to add comments while viewing a PDF.  The following quick actions are available for commenting based on your selection in a PDF:\n\u2022   Actions on text selection : When you select text, you can perform actions like Highlight text,  Underline text, Strikethrough text, Redact text, Copy text, and Edit a PDF.\n\u2022   Actions on image selection:  When you select an image you can perform actions like  Add sticky note, Highlight image, Redact image, Copy Image, and Edit a PDF.\n\u2022   Actions on highlighted selection:  When you select an existing highlighted comment  in a PDF you see quick actions to Add Note, Change Color, or Delete the comment.",
+      "page": 2
+    },
+    {
+      "heading": "Annotations and drawing markup tools  overview",
+      "content": "Note: In Acrobat Reader, complete commenting tools are available only in PDFs  with commenting enabled.\nYou can use annotation and drawing markup tools to add comments. Comments are notes  and drawings that communicate ideas or provide feedback for PDFs. You can type a text  message using the Add text comment tool. Alternatively, you can use a drawing tool to add a  line, circle, or other shape and then type a message in the associated pop-up note. Text- editing tools let you add editing marks to indicate changes that you want in the source  document.",
+      "page": 2
+    },
+    {
+      "heading": "Note:",
+      "content": "In Acrobat Pro, you can add tags to your comments so that readers with motion or vision  limitations can read them using assistive technologies.",
+      "page": 2
+    },
+    {
+      "heading": "Show annotations and drawing markup tools",
+      "content": "Annotations and markup tools don\u2019t appear by default, except when you open a PDF in a  managed review workflow.\n1.   Choose the  Comments  icon on the right pane to see the added comments.\nComment pane\n2.   The drawing markup tools are grouped under the  Draw freehand  tool in the floating\nquick tools menu on the left.\nDrawing Tools menu   Select an annotation or drawing markup tool\nFrom the quick tools menu on the left, select the desired annotation to add to the PDF.\nNote:  After you make an initial comment, the tool changes back to the Select tool so that  you can move, resize, or edit your comment. (The  Pencil  and  Highlight   Text  tools stay  selected.)",
+      "page": 4
+    },
+    {
+      "heading": "Keep an annotation tool selected",
+      "content": "You can add multiple comments without reselecting the tool.\n1.   In the Comment tools, select the tool you want to use (but don\u2019t use it yet).\n2.   Select the  Use the same tool until it's unselected  icon  .",
+      "page": 5
+    },
+    {
+      "heading": "Add a comment",
+      "content": "Note:   In Acrobat Reader , complete commenting tools are available only in PDFs that  have commenting enabled. PDFs in a review workflow typically include commenting  rights.\nThe most common type of comment is the Add a comment that resembles a sticky note.  The comment appears as a note icon on the page and a pop-up note for your text  message. You can Add a comment anywhere on the page or in the document area.\nUse the Add a comment tool to add a text message in a pop-up note.   Steps to add a comment\n1.   Select the  Add a comment  tool   from the quick tools menu, and select where you  want to place the note.\n2.   Type text in the pop-up note. You can also use the Select tool   to copy and paste  text from a PDF into the note.",
+      "page": 5
+    },
+    {
+      "heading": "Note:  If you close the pop-up note, your text remains.      Edit a comment",
+      "content": "1.   Select or double-click the note icon.\n2.   (Optional) To change the comment properties, right-click the sticky note   icon or from\nthe options menu of the comment, select Properties. Modify the Sticky Note Properties  as desired and select  OK .",
+      "page": 6
+    },
+    {
+      "heading": "Change font size of annotation comments",
+      "content": "1.   Open the Preferences dialog box by pressing  Ctrl + K  (Windows) or  command +",
+      "page": 6
+    },
+    {
+      "heading": "K  (macOS).",
+      "content": "2.   Under  Categories , select  Commenting .\n3.   Select the  Font Size  drop-down menu and select the desired font size.\n4.   Select  OK .\nNote:  Use the Commenting panel in the Preferences dialog box to change default pop-up  behavior, and other settings for creating and viewing comments    Copy partial text in a comment\n1.   Click or double-click the note icon.\n2.   Select the text, and then right-click and copy text.",
+      "page": 6
+    },
+    {
+      "heading": "Delete a comment",
+      "content": "1.   Open the PDF document in Adobe Acrobat. Locate and select the comment icon you\nwant to delete.\n2.   Select Delete     from the contextual menu.",
+      "page": 7
+    },
+    {
+      "heading": "Add a text comment",
+      "content": "Use the  Add text comment  tool to type text anywhere on the PDF page.\n1.   From the Quick action toolbar menu, select  Add a comment  >  Add text Comment .\n2.   Select the location on the page where you want to add the comment.\n3.   (Optional) To change the text formatting, double-click the added text comment, select\nthe text, and then select the font, text alignment, and other text formatting you want.",
+      "page": 8
+    },
+    {
+      "heading": "Add reactions to comments on shared files",
+      "content": "You can now enhance your reviews on shared PDFs in Acrobat by adding reaction emojis to  comments, making the reviews more interactive. To add reactions:\n1.   Open a shared PDF and select the  Comments  panel.\n2.   Select the emoticon icon next to the comment you want to react to. A dialog box\nappears.\n3.   Select an emoticon from the dialog box or use the search bar to find and select your\ndesired reaction.",
+      "page": 9
+    },
+    {
+      "heading": "Add an arrow, or shape",
+      "content": "Note:   In Acrobat Reader  , drawing tools are available only in PDFs that have commenting  enabled. PDFs in a review workflow typically include commenting rights.\nWhen selecting a drawing tool, consider the effect you want.\n1.   From the Quick action toolbar, select the  Draw freehand  tool and then select the\ndesired drawing markup tool:\n\u2022   The  Line  tool  ,  the  Arrow  tool  , the  Rectangle  tool  ,\nand the  Circle  tool   lets you create simple shapes.\n\u2022   The  Cloud  tool   and  Polygon  tool   create closed shapes with multiple\nsegments. The  Connected lines  tool   creates open shapes with multiple  segments.\n\u2022   The  Draw  tool creates free-form drawings, and the  Erase a",
+      "page": 9
+    },
+    {
+      "heading": "drawing  tool   removes the drawing markups.",
+      "content": "Note:  To specify the line width, color, and other properties before you draw, select the  desired tool, and press Ctrl+E to open the properties toolbar. Set the desired options in the  Properties toolbar.\n2.   Draw in the PDF:\n\u2022   To create a cloud or polygon shape, click to create the start point, move the  pointer, and click to create each segment. To finish drawing the shape, click the  start point, or right-click and choose Complete from the menu. Double-click to  end a polygon line.\n\u2022   To draw a line, arrow, or rectangle, either drag across the area where you want  the markup to appear, or click twice: once to create the start point and once to  create the end point.\n\u2022   To draw a square or circle, or to draw a line that\u2019s horizontal, vertical, or at a 45\u00b0  angle, press Shift while you draw.\n\u2022   To draw free-form lines using the  Draw  tool, drag where you want to begin  drawing. You can release the mouse button, move the pointer to a new  location, and continue drawing. To erase parts of the drawing, select the  Erase",
+      "page": 10
+    },
+    {
+      "heading": "a drawing  tool   and drag across the areas of the drawing that you want to  remove.",
+      "content": "3.   To edit or resize the markup, select it and drag one of the handles to make your\nadjustments.\n4.   To add a note to the markup, select the markup and then select  Add note  in the quick\naction pop-up menu.\nAdd note to markup\n5.   (Optional) Click the close button in the pop-up note. A note icon appears to the right\nof the markup to indicate the presence of text in the pop-up note.",
+      "page": 10
+    },
+    {
+      "heading": "Note:   To delete a drawing markup, select it and press Delete.",
+      "content": "Also, you can edit PDFs with comments online. Our online PDF editor lets you easily add text,  sticky notes, highlights, drawings, and more to PDFs.",
+      "page": 10
+    },
+    {
+      "heading": "Add a line",
+      "content": "1.   From the Quick action toolbar, select the  Draw freehand  tool.\n2.   Select the  Line  tool  .\n3.   Drag across the area where you want the line to appear.",
+      "page": 11
+    },
+    {
+      "heading": "Group and ungroup markups",
+      "content": "You can group two or more markups so that your comments function as a single comment.  You might group markups temporarily to move them to a new location or to modify their  properties rather than editing each one individually. Grouping also helps to distinguish your  markups from other reviewers\u2019 markups in a document review.",
+      "page": 11
+    },
+    {
+      "heading": "Group markups",
+      "content": "1.   Using the Select tool or the Hand tool, select a markup.\n2.   Ctrl-click/Command-click to select the markups you want to group.\n3.   Right-click within the selection, and choose  Group .",
+      "page": 11
+    },
+    {
+      "heading": "Ungroup markups",
+      "content": "1.   Right-click the grouped selection, and choose  Ungroup .",
+      "page": 12
+    },
+    {
+      "heading": "Add comments in a text box or callout",
+      "content": "You can use the  Add text comment  tool to create a box that contains text. You can position it  anywhere on the page and adjust it to any size. A text box remains visible on the document  page; it doesn\u2019t close like a pop-up note.\nText font and size are based on the system's default settings.",
+      "page": 12
+    },
+    {
+      "heading": "Note:",
+      "content": "You can add comments to Japanese, Chinese, and Korean text with the  Text Box  tool,  but you must have the Asian-language resource files installed. Text boxes allow for  horizontal text only.\nYou can use the  Text callout  tool to create a callout text box. Callout text boxes are handy  when you want to single out\u2014but not obscure\u2014a particular area of a document. Callout text  boxes have three parts: a text box, a knee line, and an end-point line. You can resize each part  by dragging a handle. The knee line can be resized in one direction only; horizontal knee lines  can be resized horizontally only; vertical knee lines can be resized vertically only. The text box  expands vertically as you type so that all text remains visible.\nYou can move the text box itself or together with the end-point line. The text box moves  around a stationary anchor point\u2014the arrow on the end-point line\u2014created when you first  click in the PDF. You can modify the color and appearance of the text box and add arrows or  leaders to the end-point line.",
+      "page": 12
+    },
+    {
+      "heading": "Add a comment in text box",
+      "content": "1.   From the  Quick action toolbar , select  Add a comment  >  Add text comment .\n2.   Select a location in the PDF where you want to add the text.\nEnter the text. The text wraps automatically when it reaches the right edge of the box.\nSet or change properties for the text box\nSelect the  Set or change properties for the selected text  icon in the quick tools menu to  change the text color, alignment, and font attributes for the text.\nTo make further changes to the text box:\n\u2022   Using the  Select  tool, select an edge of the text box and then drag a corner to resize it.  Right-click the text box to open the Text Box Properties and change the border and fill  options.\n\u2022   Double-click the text box to edit the text or change the text attributes. Drag across the  text to select it, then select options from the quick tools menu.\nTo delete the text box, select it and then press  Delete .\nNote:  You can also paste a block of text by selecting and copying the text in any  application, selecting the Hand tool in Acrobat, and choosing Edit > Paste.",
+      "page": 13
+    },
+    {
+      "heading": "Add a comment in callout",
+      "content": "1.   From the quick tools menu, select  Draw freehand  >  Text callout .\n2.   Select once to set the location of the end point, and select again to set the location of\nthe text box.\n3.   (Optional) Select  Set or change properties   for the selected text  icon in the quick\ntools menu, and then select the text's color, alignment, and font attributes.\n4.   Enter the text. Text wraps automatically when it reaches the right edge of the box.\n5.   (Optional) To make further changes to the text box:\n\u2022   To resize the callout, select it and drag any of the handles that appear.\n\u2022   To move the text box, click inside the box and drag it.\n\u2022   To move the entire callout, click either the end-point line or an edge of the text  box, and drag it.\n\u2022   To change the color, opacity, or line characteristics, right-click and  choose  Properties , and then select the options you want.",
+      "page": 14
+    },
+    {
+      "heading": "Add comments in a file attachment",
+      "content": "Note:   In Acrobat Reader , commenting tools are available only in PDFs that have  commenting enabled. PDFs in a review workflow typically include commenting rights.\nUse the  Attach file  tool to embed a file at a selected location in a PDF, so that the reader can  open it for viewing. By adding attachments as a comment, you can reference longer  documents that can\u2019t easily be pasted into a pop-up note or text box. If you move the PDF to  a new location, the embedded file automatically goes with it. To view an attachment, the  reader must have an application installed that can open the attachment.\nNote:  Be sure to use the  Attach file  option from the Add Comments tool when  attaching files for a document review. Document-level file attachments that you attach  using the  Attach file  tool from the   Edit  >  More  menu aren\u2019t tracked with other  comments in a review workflow and may cause your attached comments to be lost.\n1.   From the quick tools menu, select  Add a comment  >  Attach file .  2.   Click in the PDF where you want to place the attachment.  3.   Select the file that you want to attach, and then click  Open . If you\u2019re attaching a PDF,  you can highlight areas of interest in the file using comments.  4.   In the  File Attachment Properties  dialog box, select the settings for the file icon that  appears in the PDF and select  OK .\nThe comment attachment also appears in the Attachments tab (in the right navigation  pane) with a page number indicating its location.",
+      "page": 14
+    },
+    {
+      "heading": "Commenting preferences",
+      "content": "Commenting preferences affect both the appearance of and the way you view annotations  and markups in PDFs.\nNote:   A reviewer can place comments anywhere within the document frame. As a  result, sometimes you need to scroll or zoom out to see comments that are located off  the page.\nIn the Preferences dialog box under Categories, select Commenting.",
+      "page": 15
+    },
+    {
+      "heading": "Font, Font Size",
+      "content": "In Windows , you can determine the font and the size of text in pop-up notes. In  Mac OS , you  can select only Large, Medium, or Small settings for the font. This setting applies to all new  and existing comments.",
+      "page": 15
+    },
+    {
+      "heading": "Pop-up Opacity",
+      "content": "Determines the opacity of comment pop-up notes in values from 1 to 100. When a pop-up  note is open but not selected, an opacity value of 100 makes the note opaque, while lower  values make it more transparent.",
+      "page": 15
+    },
+    {
+      "heading": "Enable Text Indicators And Tooltips",
+      "content": "Shows a tool tip when you place the pointer over a comment that includes a pop-up note.  The tool tip contains the author name, comment status, and two lines of the text. Selected by  default.",
+      "page": 15
+    },
+    {
+      "heading": "Print Notes And Pop-ups",
+      "content": "Specifies that pop-up notes associated with comments, and icons for note, audio, and file  attachments print exactly as they appear on the page.\nInstead of selecting this option, you can print comment text in various layouts by choosing  File > Print, and click  Summarize Comments .",
+      "page": 15
+    },
+    {
+      "heading": "Show Lines Connecting Comment Markups To Their Pop-ups On Mouse Rollover",
+      "content": "When you place the pointer over a comment markup (such as a highlight or a note icon), the  shaded connector line appears. Selected by default.",
+      "page": 15
+    },
+    {
+      "heading": "Ensure That Pop-ups Are Visible As The Document Is Scrolled",
+      "content": "As you scroll a PDF, the pop-up notes on a given page shift to stay in view within the  document pane. Selected by default.",
+      "page": 16
+    }
+  ]
+}
